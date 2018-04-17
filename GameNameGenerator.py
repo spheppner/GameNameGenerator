@@ -2,10 +2,26 @@ import random
 
 names = []
 
-word_1 = ["Cool", "Crazy", "Epic", "Fantastic", "Godlike", "Awesome", "Unprofen", "Legendary", "Heroic", "Rare", "Profen", "Very Rare", "Funny", "Dumb", "Very Cool", "Drunken", "Stinking", "Japanese", "Austrian", "Australian", "American", "European", "Asien", "South America"]
-word_2 = ["Game", "Program", "Battle", "Python Game", "Battle Simulator", "Tournament"]
-word_3 = ["for", "without", "of"]
-word_4 = ["drunken dwarfs", "drunken trolls", "humans", "artifficial intelligences", "gamers", "programmers", "nerds", "drunken elfs", "drunken lizards", "Dumb Lizards", "dumb and drunken trolls", "dumb and drunken elfs", "soup-sucking, dumb and drunken elfs", "soup-sucking robots", "maniacly laughing robots", "maniacly laughing and stinking elfs", "rotten skelettons", "stinking humans", "stinking programmers", "stinking and rotten humans", "stinking and rotten programmers", "rotten gamers", "stinking gamers", "stinking, dumb, and high elfs"]
+with open("word1.txt","r") as f:
+	fr1 = f.read()
+	word_1 = fr1.split(",")
+	
+with open("word2.txt","r") as f:
+	fr2 = f.read()
+	word_2 = fr2.split(",")
+
+with open("word3.txt","r") as f:
+	fr3 = f.read()
+	word_3 = fr3.split(",")
+	
+with open("word4.txt","r") as f:
+	fr4 = f.read()
+	word_4 = fr4.split(",")
+	
+with open("word5.txt","r") as f:
+	fr5 = f.read()
+	word_5 = fr5.split(",")
+			
 word_5 = ["creepy red eyes", "laser-shooting eyes", "pink unicorn armor", "golden shining armor", "silver armor", "armor out of pure gold", "armor out of bones", "armor out of stinking socks"]
 
 while True:
