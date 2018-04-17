@@ -1,8 +1,8 @@
 import random
 
 names = []
-adjectives = ["Cool", "Crazy", "Epic", "Fantastic", "Godlike", "Awesome", "Unprofen", "Legendary", "Heroic", "Rare", "Profen", "Very Rare", "Funny", "Dumb", "Very Cool", "Drunken", "Stinking", "Japanese", "Austrian", "Australian", "American", "European", "Asien", "South America"]
 
+word_1 = ["Cool", "Crazy", "Epic", "Fantastic", "Godlike", "Awesome", "Unprofen", "Legendary", "Heroic", "Rare", "Profen", "Very Rare", "Funny", "Dumb", "Very Cool", "Drunken", "Stinking", "Japanese", "Austrian", "Australian", "American", "European", "Asien", "South America"]
 word_2 = ["Game", "Program", "Battle", "Python Game", "Battle Simulator", "Tournament"]
 word_3 = ["for", "without", "of"]
 word_4 = ["drunken dwarfs", "drunken trolls", "humans", "artifficial intelligences", "gamers", "programmers", "nerds", "drunken elfs", "drunken lizards", "Dumb Lizards", "dumb and drunken trolls", "dumb and drunken elfs", "soup-sucking, dumb and drunken elfs", "soup-sucking robots", "maniacly laughing robots", "maniacly laughing and stinking elfs", "rotten skelettons", "stinking humans", "stinking programmers", "stinking and rotten humans", "stinking and rotten programmers", "rotten gamers", "stinking gamers", "stinking, dumb, and high elfs"]
@@ -20,7 +20,7 @@ while True:
 		break
 
 for x in range(int(hm)):
-	name = random.choice(adjectives) + " " + random.choice(word_2) + " " + random.choice(word_3) + " " + random.choice(word_4) + " with " + random.choice(word_5)
+	name = random.choice(word_1) + " " + random.choice(word_2) + " " + random.choice(word_3) + " " + random.choice(word_4) + " with " + random.choice(word_5)
 	names.append(name)
 	print("-----------------------------------------------------------")
 	print(str(x) + ": " + name)
